@@ -1,16 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
 }
 
 .container {
-    width: 400px;
+    width: 500px;
     margin: 50px auto;
-    padding: 10px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #c4a3a4;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0 0 0);
 }
 
 .login-form {
@@ -30,8 +30,8 @@ body {
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-    width: 100%;
-    height: 40px;
+    width: 90%;
+    height: 30px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -39,22 +39,23 @@ body {
 }
 
 .login-form input[type="submit"] {
-    width: 100%;
+    width: 90%;
     height: 40px;
-    background-color: #4CAF50;
+    background-color: #7736cd;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgb(0 0 0);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #3e8e4c;
 }
 
 .container {
-    background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+    background-image: linear-gradient(to bottom, #8b4bed, #5e3e8e);
     background-size: 100% 300px;
     animation: gradient 3s ease infinite;
 }
