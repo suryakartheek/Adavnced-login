@@ -1,30 +1,20 @@
-/* style.css */
-.container {
-    background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    animation: gradient 3s ease infinite;
-}
+const loginForm = document.getElementById('login-form');
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 100%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 100%;
-    }
-}
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent form submission for validation
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-.login-form input[type="submit"] {
-    background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
-    background-size: 100% 40px;
-    background-position: 0% 100%;
-    animation: gradient 3s ease infinite;
-}
+    // Basic validation
+    if (username.length < 3) {
+        alert("Username must be at least 3 characters long.");
+        return;
+    }
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+    }
 
-.login-form input[type="submit"]:hover {
-    background-image: linear-gradient(to bottom, #3e8e41, #4CAF50);
-}
+    // If validation passes, you can submit the form or perform login logic here
+    alert("Login successful!");
+});
